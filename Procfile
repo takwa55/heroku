@@ -1,2 +1,1 @@
-web : vendor/bin/heroko-php-apache2 public/
-
+web:node src/server.js

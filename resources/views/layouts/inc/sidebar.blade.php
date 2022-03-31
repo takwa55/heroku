@@ -39,7 +39,7 @@
 
            <li class="nav-item"id="navbarNavDarDropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
-            <i class="fa fa-server" style="color: rgb(215, 255, 36)"></i>Service_Liquidation
+            <i class="fa fa-server" style="color: rgb(255, 242, 0)"></i>Service_Liquidation
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
             <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'ajouter-enquete' }}"><i class="icon icon-diamond"></i>Demande 1-ier_paiement</a></li>
