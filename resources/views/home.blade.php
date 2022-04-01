@@ -7,6 +7,9 @@
   <main class="main-content position-relative border-radius-lg ">
     @include('layouts.inc.navbar')
     <div class="container-fluid py-4">
+      <div class="card-header" style="margin-bottom: 15px">
+        <h2 style="color:rgb(74, 0, 234);text-align:center; padding:7px;">Caisse nationale des retraites</h2>
+      </div>
       <div class="row invoice-card-row">
         <div class="col-xl-3 col-xxl-3 col-sm-6">
           <div class="card bg-warning invoice-card">
@@ -18,8 +21,8 @@
                 
               </div>
               <div>
-                <h2 class="text-white invoice-num">2478</h2>
-                <span class="text-white fs-18">Total Invoices</span>
+                <h2 class="text-white invoice-num">{{ \App\Models\Demandes::count() }}</h2>
+                <span class=""style="color: white;font-weight: 700;">Instance/338-Liquidation</span>
               </div>
             </div>
           </div>
@@ -35,8 +38,8 @@
                 
               </div>
               <div>
-                <h2 class="text-white invoice-num">983</h2>
-                <span class="text-white fs-18">Paid Invoices</span>
+                <h2 class="text-white invoice-num">{{ \App\Models\Myparent::count() }}</h2>
+                <span class="" style="color: white;font-weight: 700;">338/Wilaya-Constantine</span>
               </div>
             </div>
           </div>
@@ -53,7 +56,7 @@
               </div>
               <div>
                 <h2 class="text-white invoice-num">1256</h2>
-                <span class="text-white fs-18">Unpaid Invoices</span>
+                <span class=""style="color: white;font-weight: 700;">338/Wilaya-Constantine</span>
               </div>
             </div>
           </div>
@@ -68,8 +71,8 @@
               
               </div>
               <div>
-                <h2 class="text-white invoice-num">652</h2>
-                <span class="text-white fs-18">Total Invoices Sent</span>
+                <h2 class="text-white invoice-num">{{ \App\Models\Instance::count() }}</h2>
+                <span class="" style="color: white; font-weight: 700;">Instance/338-Révision</span>
               </div>
             </div>
           </div>
