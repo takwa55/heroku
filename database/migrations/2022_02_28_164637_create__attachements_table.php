@@ -17,7 +17,7 @@ class CreateattachementsTable extends Migration
             $table->id();
             $table->string('file_name',999);
             $table->unsignedBigInteger('enquete_id')->nullable;
-            $table->foreign('enquete_id')->references('id')->on('Enquetes')->onDelete('cascade');
+            $table->foreign('enquete_id')->references('id')->on('enquetes')->onDelete('cascade');
             $table->timestamps();
         });
     }
