@@ -31,7 +31,23 @@
         background-color: rgb(73, 58, 153);
         color: #000;
     }
-  
+   
+    button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+    background-color: rgb(73, 58, 153);
+    color: white;
+    font-weight: 700;
+    margin:-0.4em;
+    text-align-last: center
+    }
+    #btnajou{
+        margin-left: 5px;
+        width: 190px;
+        font-size: 15px;
+        color: beige;
+        font-weight: 700;
+        background-color: rgb(28, 8, 255)
+    }
 </style>
 @endsection
 

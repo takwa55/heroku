@@ -42,6 +42,10 @@ class UploadsController extends Controller
 
    public function delete(Request $request)
     {
+
+   /*    if (Storage::exists('app/enquete_attachments/')) {
+        Storage::delete('app/enquete_attachments/');
+      } */
       Storage::disk('enquete_attachments')->delete('app/enquete_attachments/'.$request->Nom,'/'.$request->file_name);
 
 

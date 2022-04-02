@@ -7,7 +7,7 @@
   <main class="main-content position-relative border-radius-lg ">
     @include('layouts.inc.navbar')
     <div class="container-fluid py-4">
-      <div class="card-header" style="margin-bottom: 15px">
+      <div class="card-header" style="margin-bottom: 15px; background:rgb(230, 230, 230)">
         <h2 style="color:rgb(74, 0, 234);text-align:center; padding:7px;">Caisse nationale des retraites</h2>
       </div>
       <div class="row invoice-card-row">

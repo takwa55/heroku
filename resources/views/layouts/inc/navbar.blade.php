@@ -7,7 +7,7 @@
         </ol>
         <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6> --}}
       </nav>
-        <ul class="navbar-nav  justify-content-end">
+       {{--  <ul class="navbar-nav  justify-content-end">
           <li class="nav-item dropdown pe-2 d-flex align-items-center">
             <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa fa-bell cursor-pointer" style="color: blue; margin-top:0.5x"> Profile</i>
@@ -79,7 +79,7 @@
               </li>
             </ul>
           </li>
-        </ul>
+        </ul> --}}
       </div>
     </div>
   </nav>

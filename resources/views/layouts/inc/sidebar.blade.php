@@ -9,6 +9,21 @@
     <hr class="horizontal dark mt-0">
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
+        <li class="nav-item"id="navbarNavDarDropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
+            {{-- <i class="fa fa-bell cursor-pointer"> </i> --}}<img src="{{ asset('admin/img/woman.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"> Profile
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();" style="color: black; font-weight:700">
+                <img src="{{ asset('admin/img/sign-out.png') }}" alt="main_logo" style="width: 27px">
+                  {{ __('Déconecter') }}
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+          </ul>
+        </li>
         <li class="nav-item">
           <a class="nav-link active" href="{{ url('home') }}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
