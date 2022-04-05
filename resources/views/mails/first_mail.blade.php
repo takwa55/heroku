@@ -1,0 +1,1 @@
+<h1>my first mail send from {{ $name }}</h1>

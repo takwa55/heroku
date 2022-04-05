@@ -34,10 +34,11 @@
         </li>
         <li class="nav-item"id="navbarNavDarDropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
-           <i class="fa fa-id-card"></i> Les Enquetes_Traitées
+            <img src="{{ asset('admin/img/list.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;">Les Enquetes_Traitées
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" style="color:black; font-size:15px;" href="{{ url('add-enquete') }}"><i class="icon icon-diamond"></i>Liste des enquetes/locale</a></li>
+            <li><a class="dropdown-item" style="color:black; font-size:15px;" href="{{ url('add-enquete') }}">
+              <img src="{{ asset('admin/img/checklist.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;">Liste des enquetes/locale</a></li>
           </ul>
         </li>
 

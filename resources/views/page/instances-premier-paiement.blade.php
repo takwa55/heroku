@@ -15,14 +15,16 @@
         padding: 2px;
         font-size: 14px;
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: white;
         font: bold;
+        color: #000;
         
     }
     #example th{
         padding: 7px;
         font-size: 14px;
         font: bold;
-        background-color: rgb(73, 58, 153);
+        background-color: blue;
         color: white;
     }
     #example td:hover{
@@ -36,6 +38,14 @@
     }
     .btn-secondary{
         background-color: blue;
+    }
+    button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    margin:-0.4em;
+    text-align-last: center
     }
     
 </style>
@@ -56,7 +66,7 @@
 
     <div class="container-fluid site-width">
         <div class="card">
-            <div class="card-header" style="background-color:rgb(73, 58, 153)">
+            <div class="card-header" style="background-color:blue">
                 <h4 style="text-align: center; color:rgb(255, 255, 255); font-size:23px">Les Enquetes En Instances/Service Revision</h4> 
             </div>
             <div class="card-body">

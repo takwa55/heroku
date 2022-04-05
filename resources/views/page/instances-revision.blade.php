@@ -16,6 +16,9 @@
         font-size: 14px;
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font: bold;
+        background-color: white;
+        color: #000;
+        
         
     }
     #example th{
@@ -36,6 +39,14 @@
     }
     .btn-secondary{
         background-color: blue;
+    }
+    button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    margin:-0.4em;
+    text-align-last: center
     }
     
 </style>

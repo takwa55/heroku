@@ -34,8 +34,8 @@
                                     <td>{{ $enquete->Emp }}</td>
                                     <td>{{ $enquete->Rapport }}</td>
                                     <td>
-                                        <button type="button" wire:click="edit({{$enquete->id }})" class="btn btn-info btn-sm" title="Modifier"><i class="fa fa-edit"></i></button>
-                                        <button type="button" wire:click="delete({{$enquete->id }})" class="btn btn-danger btn-sm" title="Delete"><i class="fa fa-trash"></i></button>
+                                        <button type="button" wire:click="edit({{$enquete->id }})" class="btn btn-info btn-sm" style="background-color: blue" title="Modifier"><i class="fa fa-edit"></i></button>
+                                        <button type="button" wire:click="delete({{$enquete->id }})" class="btn btn-danger btn-sm" style="background-color: red; margin-left:4.5px;margin-right:0.1px" title="Delete"><i class="fa fa-trash"></i></button>
                                         
                                         <a href="{{ url('Attachement')}}/{{ ($enquete->id) }}" class="btn btn-warning btn-sm" title="Détail"><i class="fa fa-eye"></i></a>
                                 </tr>

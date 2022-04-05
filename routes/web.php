@@ -4,11 +4,12 @@
 use App\Http\Livewire\EditEnquete;
 use App\Http\Livewire\ListEnquete;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViveController;
 use App\Http\Livewire\UpdateEnqueteComponent;
 use App\Http\Controllers\Admin\UploadsController;
-
+use App\Mail\FirstMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,8 +56,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::post('/Enquetes_update/{id}', 'Admin\DemandesController@Enquetes_update')->name('Enquetes_update');
     Route::post('/Premier_destroy/{id}', 'Admin\DemandesController@Premier_destroy')->name('Premier_destroy');
 
+
+
     Route::get('/loogin', function () {
         return view('loogin');
+    });
+     Route::get('/send-mail', function () {
+        Mail::to('test@test.com')->send(new FirstMail("Sallam Sallam"));
     });
     
     
