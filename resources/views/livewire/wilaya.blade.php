@@ -50,12 +50,22 @@
         font-weight: 700;
         background-color: rgb(28, 8, 255)
     }
+    .row input,placeholder{
+        font-weight: 700;
+    }
+    #back{
+        background: rgb(131,58,180);
+        background:linear-gradient(90deg,
+        rgba(131,58,180,1) 0%,
+        rgba(253,29,29,1) 50%,
+        rgba(252,176,69,1) 100%);
+    }
 </style>
 @endsection
 
 @section('content')
     <div class="card">
-        <div class="card-body"  style="background-color: #35465c; border-radius:7px.7px;">
+        <div class="card-body" id="back"  style= "border-radius:7px.7px;">
             <h3 style="color: white; text-align:center; font:bolder" >Caisse Nationale des Retraites</h3>
             <livewire:add-wilaya/> 
         </div>

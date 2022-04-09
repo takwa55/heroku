@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="card">
                     <div class="card-header" style="padding: 9px;">                               
-                        <h2 class="card-title text-center" style="font-style: italic; color:blue; float: left; margin-top:3px; margin-left:19px;">Ajouter-assuré</h2>
+                        <h2 class="card-title text-center" style="font-style: italic; color:blue; float: left; margin-top:3px; margin-left:19px;">Ajouter_assuré</h2>
                         <a href="{{ url('add-wilaya') }}" class="btn btn-primary" style="float: right; margin-top:9px; margin-right:15px;">
                             <img src="{{ asset('admin/img/verified.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"> Lite des enquetes/wilaya</a>
                     </div>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <br>
-                    <p class="text-danger">pdf, jpeg, jpg, png</p>
+                    <p style="color:rgb(255, 255, 255); text-transform:uppercase; font-weight:700"><span style="text-transform: none; color:rgb(254, 254, 255); text-decoration:underline">Accept forme</span> : pdf - jpeg - jpg - png</p>
                     <div class="col-12 col-sm-6">
                         <label for="fileUpload4" class="file-upload btn btn-info btn-block"><i class="fa fa-upload mr-2"></i>
                             <input id="fileUpload4" type="file" wire:model="photos" accept=",pdf, jpg, png, image/jpeg, image/jpg, image/phg" multiple>
