@@ -34,6 +34,12 @@ return [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
+
+        'wilaya_attachments' => [
+            'driver' => 'local',
+            'root' => storage_path('app/wilaya_attachments'),
+        ],
+
         'enquete_attachments' => [
             'driver' => 'local',
             'root' => storage_path('app/enquete_attachments'),

@@ -55,8 +55,8 @@
                 
               </div>
               <div>
-                <h2 class="text-white invoice-num">1256</h2>
-                <span class=""style="color: white;font-weight: 700;">338/Wilaya-Constantine</span>
+                <h2 class="text-white invoice-num">{{ \App\Models\wilaya::count() }}</h2>
+                <span class=""style="color: white;font-weight: 700;">338/Wilayas</span>
               </div>
             </div>
           </div>

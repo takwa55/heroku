@@ -37,8 +37,17 @@
             <img src="{{ asset('admin/img/list.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;">Les Enquetes_Traitées
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" style="color:black; font-size:15px;" href="{{ url('add-enquete') }}">
-              <img src="{{ asset('admin/img/checklist.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;">Liste des enquetes/locale</a></li>
+            <li>
+              <a class="dropdown-item" style="color:black; font-size:15px;" href="{{ url('add-enquete') }}">
+                <img src="{{ asset('admin/img/checklist.png') }}" alt="main_logo" style="width: 21px; margin-right:1px;">Liste des enquetes/locale
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" style="color:black; font-size:15px;" href="{{ url('add-wilaya') }}">
+                <img src="{{ asset('admin/img/checklist.png') }}" alt="main_logo" style="width: 21px; margin-right:1px;">Liste des enquetes/Wilayas
+              </a>
+            </li>
           </ul>
         </li>
 

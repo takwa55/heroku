@@ -56,14 +56,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::post('/Enquetes_update/{id}', 'Admin\DemandesController@Enquetes_update')->name('Enquetes_update');
     Route::post('/Premier_destroy/{id}', 'Admin\DemandesController@Premier_destroy')->name('Premier_destroy');
 
-
+    Route::view('add-wilaya','livewire.wilaya');
 
     Route::get('/loogin', function () {
         return view('loogin');
     });
-     Route::get('/send-mail', function () {
-        Mail::to('test@test.com')->send(new FirstMail("Sallam Sallam"));
-    });
+    
     
     
 
