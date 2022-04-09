@@ -79,9 +79,6 @@
         </div>
       </div>     
     </div>
-    <div>
-      <a href="/send-mail" class="btn btn-info btn-sm">send-mail</a>
-    </div>
     @include('layouts.inc.footerbar')
   </main>
 @include('layouts.inc.scripts')

@@ -9,7 +9,6 @@
     {{ session('warning-message') }}
 </div>
 @endif
-
 <div>
     @if($show_table)
     @include('livewire.enquete_table')

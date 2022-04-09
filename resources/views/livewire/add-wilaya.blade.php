@@ -9,11 +9,10 @@
     {{ session('warning-message') }}
 </div>
 @endif
-
 <div>
-   {{--  @if($show_table)
-    @include('livewire.enquete_table')
-    @else --}}
+    @if($show_table)
+    @include('livewire.wilaya_table')
+    @else
         <div class="container-fluid site-width">
             <div class="row">
                 <div class="card">
@@ -76,5 +75,5 @@
             </div>   
             <!-- END: Card DATA-->
         </div>
-    {{-- @endif --}}
+    @endif
 </div>

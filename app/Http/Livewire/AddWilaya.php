@@ -20,7 +20,8 @@ class AddWilaya extends Component
     $Reponse,
     $Periode,
     $Emp,
-    $Rapport;
+    $Rapport,
+    $user;
     public
     $photos,
     $udateMode = false,
@@ -28,7 +29,15 @@ class AddWilaya extends Component
 
     public function render()
     {
-        return view('livewire.add-wilaya');
+        return view('livewire.add-wilaya',[
+            'wilayas' => Wilaya::all(),
+        ]);
+    }
+
+
+    public function showformadd()
+    {
+        $this->show_table = false;
     }
 
 
@@ -59,6 +68,7 @@ class AddWilaya extends Component
         $this->clearForm();
         return redirect()->to('add-wilaya')->with('success','felicitation ! ');
     }
+
     public function clearForm()
     {
             $this->N_Pension = '';
@@ -70,4 +80,48 @@ class AddWilaya extends Component
             $this->Rapport = '';
     }
 
+    public function edit($id)
+    {
+        $this->show_table = false;
+        $this->udateMode = true;
+
+        $My_wilaya = Wilaya::where('id', $id)->first();
+        $this->wilaya_id = $id;
+        $this->N_Pension = $My_wilaya->N_Pension;
+        $this->Nom = $My_wilaya->Nom;
+        $this->Demande = $My_wilaya->Demande;
+        $this->Reponse = $My_wilaya->Reponse;
+        $this->Periode = $My_wilaya->Periode;
+        $this->Emp = $My_wilaya->Emp;
+        $this->Rapport = $My_wilaya->Rapport;
+        $this->user = $My_wilaya->user;
+
+    }
+
+    public function submitForm_edit()
+    {
+        if ($this->wilaya_id){
+            $wialayas = Wilaya::find($this->wilaya_id);
+            $wialayas->update([
+                'N_Pension' => $this->N_Pension,
+                'Nom' => $this->Nom,
+                'Demande' => $this->Demande,
+                'Reponse' => $this->Reponse,
+                'Periode' => $this->Periode,
+                'Emp' => $this->Emp,
+                'Rapport' => $this->Rapport,
+                'user' => $this->user,
+
+            ]);
+        }
+     return redirect()->to('/add-wilaya')->with('success','felicitation ! ');
+    }
+
+    public function delete($id)
+    {
+        $wialayas = Wilaya::findOrFail($id)->delete();
+        return redirect()->to('/add-wilaya')->with('warning','felicitation ! ');
+    }
+   
+  
 }
