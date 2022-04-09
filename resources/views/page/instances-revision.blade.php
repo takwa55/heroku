@@ -48,6 +48,14 @@
     margin:-0.4em;
     text-align-last: center
     }
+    #instance{
+        margin-right: 5px;
+        margin: 2px;
+    }
+    #delete{
+        background-color: red;
+        margin-left: 2px;
+    }
     
 </style>
 @endsection
@@ -67,7 +75,7 @@
 
     <div class="container-fluid site-width">
         <div class="card">
-            <div class="card-header" style="background-color:rgb(73, 58, 153)">
+            <div class="card-header" style="background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);">
                 <h4 style="text-align: center; color:rgb(255, 255, 255); font-size:23px">Les Enquetes En Instances/Service Revision</h4> 
             </div>
             <div class="card-body">
@@ -95,9 +103,9 @@
                         <td class="text-center">{{ $items->Emp }}</td> 
                         <td>{{ $items->user }}</td> 
                         <td class="text-center">
-                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal"
+                            <button type="button" id="instance" class="btn btn-sm btn-info" data-bs-toggle="modal"
                             data-bs-target="#edit{{ $items->id }}"><i class="fa fa-edit"></i></button>
-                            <button type="button" class="btn btn-sm btn-danger"  data-bs-toggle="modal"
+                            <button type="button" id="delete" class="btn btn-sm btn-danger"  data-bs-toggle="modal"
                             data-bs-target="#delete{{ $items->id }}"><i class="fa fa-trash"></i></button>
                         </td>
                     </tr>

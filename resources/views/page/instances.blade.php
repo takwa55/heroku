@@ -6,6 +6,9 @@
         color: red;
         border-color: red;
     }
+    #emptbl th{
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+   }
 </style>
 <script src="{{ asset('js/Frontend/validate.js') }}"></script>
 @endsection

@@ -66,7 +66,7 @@
 
     <div class="container-fluid site-width">
         <div class="card">
-            <div class="card-header" style="background-color:blue">
+            <div class="card-header" style="background: linear-gradient(90deg, #d53369 0%, #daae51 100%);">
                 <h4 style="text-align: center; color:rgb(255, 255, 255); font-size:23px">Les Enquetes En Instances/Service Revision</h4> 
             </div>
             <div class="card-body">

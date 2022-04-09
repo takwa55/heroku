@@ -51,11 +51,12 @@
         background-color: rgb(28, 8, 255)
     }
 </style>
+
 @endsection
 
 @section('content')
     <div class="card">
-        <div class="card-body"  style="background-color: #35465c; border-radius:7px.7px;">
+        <div class="card-body"  style="background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); border-radius:7px.7px;">
             <h3 style="color: white; text-align:center; font:bolder" >Caisse Nationale des Retraites</h3>
             <livewire:add-enquete/> 
         </div>
