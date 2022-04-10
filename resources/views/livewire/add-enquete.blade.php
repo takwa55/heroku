@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <br>
-                    <p class="text-danger">pdf, jpeg, jpg, png</p>
+                    <p style="color:rgb(255, 255, 255); text-transform:uppercase; font-weight:700"><span style="text-transform: none; color:rgb(254, 254, 255); text-decoration:underline">Accept forme</span> : pdf - jpeg - jpg - png</p>
                     <div class="col-12 col-sm-6">
                         <label for="fileUpload4" class="file-upload btn btn-info btn-block"><i class="fa fa-upload mr-2"></i>
                             <input id="fileUpload4" type="file" wire:model="photos" accept=",pdf, jpg, png, image/jpeg, image/jpg, image/phg" multiple>

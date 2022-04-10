@@ -73,7 +73,7 @@
 </div>
 @endif
 
-    <div class="container-fluid site-width">
+    <div class="row-12">
         <div class="card">
             <div class="card-header" style="background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);">
                 <h4 style="text-align: center; color:rgb(255, 255, 255); font-size:23px">Les Enquetes En Instances/Service Revision</h4> 
@@ -118,7 +118,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title text-success" id="exampleModalLabel">Modifier Assuré</h5>
-                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <br>
                                 <div class="card-body">
@@ -129,29 +129,29 @@
                                             <div class="form-group col-sm-6">     
                                                 <input id="id" type="hidden" name="id" class="form-control" value="{{ $items->id }}">                                          
                                                 <input type="text" class="form-control text-center" name="N_Pension" id="N_Pension" value="{{ $items->N_Pension }}" onchange="this.setAttribute('value', this.value);">
-                                                <label class="form-control-placeholder" style="font-size:19px">N_Pension</label>
+                                                <label class="form-control-placeholder" style="font-size:19px;margin-left:140px;">N_Pension</label>
                                             </div>                                                    
                                             <div class="form-group col-sm-6">                                                  
                                                 <input type="text" class="form-control text-center" name="Nom" id="Nom" value="{{ $items->Nom }}" onchange="this.setAttribute('value', this.value);"  >
-                                                <label class="form-control-placeholder" style="font-size:19px">Nom</label>    
+                                                <label class="form-control-placeholder" style="font-size:19px;margin-left:170px;">Nom</label>    
                                             </div> 
                                             <div class="form-group col-sm-4">                                                  
                                                 <input type="text" class="form-control text-center" name="Demande" id="Demande" value="{{ $items->Demande }}" onchange="this.setAttribute('value', this.value);"  >
-                                                <label class="form-control-placeholder" style="font-size:19px">Demande</label>    
+                                                <label class="form-control-placeholder" style="font-size:19px;margin-left:90px;">Demande</label>    
                                             </div>
                                             <div class="form-group col-sm-4">                                                  
                                                 <input type="text" class="form-control text-center" name="Periode" id="Periode" value="{{ $items->Periode }}" onchange="this.setAttribute('value', this.value);"  >
-                                                <label class="form-control-placeholder" style="font-size:19px">Periode</label>    
+                                                <label class="form-control-placeholder" style="font-size:19px;margin-left:90px;">Periode</label>    
                                             </div>
                                                 
                                             <div class="form-group col-sm-4">                                                
                                                 <input type="text" class="form-control text-center" name="Emp" id="Emp" value="{{ $items->Emp }}" onchange="this.setAttribute('value', this.value);"  >
-                                                <label class="form-control-placeholder" style="font-size:19px">Emp</label>    
+                                                <label class="form-control-placeholder" style="font-size:19px;margin-left:90px;">Emp</label>    
                                             </div>
                                         </div>
                                         <br>
                                         <div class="modal-footer">
-                                            <button type="submit" class="btn btn-success">Modifier</button>
+                                            <button type="submit" class="btn btn-success" style="margin-right:9px;background:rgb(9, 175, 36)">Modifier</button>
                                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
                                         </div>
                                     </form> 
@@ -166,7 +166,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title text-success text-danger" id="exampleModalLabel">Suprimer Assuré</h5>
-                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <br>
                                 <div class="card-body">
@@ -187,7 +187,7 @@
                                         <br>
                                                 
                                         <div class="modal-footer">
-                                            <button type="submit" class="btn btn-secondary">Suprimer</button>
+                                            <button type="submit" class="btn btn-secondary" style="margin-right:9px;background:rgb(175, 9, 125)">Suprimer</button>
                                             <button type="button" class="btn btn-info" data-bs-dismiss="modal">Fermer</button>
                                         </div>
                                     </form> 
