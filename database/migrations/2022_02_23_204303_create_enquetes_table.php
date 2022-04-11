@@ -22,6 +22,7 @@ class CreateEnquetesTable extends Migration
 			$table->string('Periode');
 			$table->string('Emp');
 			$table->string('Rapport');
+            $table->string('user',300);
 			$table->timestamps();
         });
     }

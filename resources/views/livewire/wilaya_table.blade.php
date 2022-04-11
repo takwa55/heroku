@@ -15,10 +15,10 @@
                                 <th style="width: 100px">Demande</th>
                                 <th style="width: 100px">Reponse</th>
                                 <th style="width: 150px">Periode</th>
-                                <th style="width: 200px">Emp</th>
-                                <th style="width: 70px">Rapport</th>
-                                <th style="width: 100px">Operation</th>
+                                <th style="width: 150px">Emp</th>
+                                <th style="width: 50px">Rapport</th>
                                 <th style="width: 100px">Utilisateur</th>
+                                <th style="width: 100px">Operation</th>
                             </tr>
                         </thead>
                         <tbody class="" style="text-align: center">
@@ -39,7 +39,7 @@
                                         <button type="button" wire:click="edit({{$wilaya->id }})" class="btn btn-info btn-sm" style="background-color: blue" title="Modifier"><i class="fa fa-edit"></i></button>
                                         <button type="button" wire:click="delete({{$wilaya->id }})" class="btn btn-danger btn-sm" style="background-color: red; margin-left:4.5px;margin-right:0.1px" title="Delete"><i class="fa fa-trash"></i></button>
                                         
-                                        <a href="{{ url('Attachement')}}/{{ ($wilaya->id) }}" class="btn btn-warning btn-sm" title="Détail"><i class="fa fa-eye"></i></a>
+                                        <a href="{{ url('Attachement-wilaya')}}/{{ ($wilaya->id) }}" class="btn btn-warning btn-sm" title="Détail"><i class="fa fa-eye"></i></a>
                                 </tr>
                             @endforeach
                         </tbody>

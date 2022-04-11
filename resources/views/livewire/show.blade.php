@@ -57,7 +57,7 @@
 @section('content')
     <div class="card">
         <div class="card-body"  style="background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); border-radius:7px.7px;">
-            <h3 style="color: white; text-align:center; font:bolder" >Caisse Nationale des Retraites</h3>
+            <h3 style="color: white; text-align:center; font:bolder" >Caisse Nationale des Retraites</h3>{{-- <img src="{{ asset('admin/img/338.jpg') }}" alt="main_logo" style="padding:0; margin-left:1050px;margin-top:0; width: 110px; margin-right:1px;position:absolute"> --}}
             <livewire:add-enquete/> 
         </div>
     </div>

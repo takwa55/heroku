@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\Myparent;
 use Livewire\WithFileUploads;
 use App\Models\Models\Attachement;
+use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 
 
@@ -50,6 +51,7 @@ class AddEnquete extends Component
             $My_Parent->Periode = $this->Periode;
             $My_Parent->Emp = $this->Emp;
             $My_Parent->Rapport = $this->Rapport;
+            $My_Parent ->user = (Auth::user()->name); 
             $My_Parent->save();
 
            if (!empty($this->photos)){
@@ -91,6 +93,7 @@ class AddEnquete extends Component
         $this->Periode = $My_Parent->Periode;
         $this->Emp = $My_Parent->Emp;
         $this->Rapport = $My_Parent->Rapport;
+        $this->user = $My_Parent->user;
     }
  public function submitForm_edit()
  {
@@ -104,6 +107,7 @@ class AddEnquete extends Component
             'Periode' => $this->Periode,
             'Emp' => $this->Emp,
             'Rapport' => $this->Rapport,
+            'user' => $this->user,
 
         ]);
     }

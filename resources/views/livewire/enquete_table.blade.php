@@ -15,8 +15,9 @@
                                 <th style="width: 100px">Demande</th>
                                 <th style="width: 100px">Reponse</th>
                                 <th style="width: 150px">Periode</th>
-                                <th style="width: 200px">Emp</th>
-                                <th style="width: 70px">Rapport</th>
+                                <th style="width: 150px">Emp</th>
+                                <th style="width: 50px">Rapport</th>
+                                <th style="width: 100px">Utilisateur</th>
                                 <th style="width: 100px">Operation</th>
                             </tr>
                         </thead>
@@ -33,6 +34,7 @@
                                     <td>{{ $enquete->Periode }}</td>
                                     <td>{{ $enquete->Emp }}</td>
                                     <td>{{ $enquete->Rapport }}</td>
+                                    <td>{{ $enquete->user }}</td>
                                     <td>
                                         <button type="button" wire:click="edit({{$enquete->id }})" class="btn btn-info btn-sm" style="background-color: blue" title="Modifier"><i class="fa fa-edit"></i></button>
                                         <button type="button" wire:click="delete({{$enquete->id }})" class="btn btn-danger btn-sm" style="background-color: red; margin-left:4.5px;margin-right:0.1px" title="Delete"><i class="fa fa-trash"></i></button>

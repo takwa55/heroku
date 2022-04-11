@@ -10,7 +10,7 @@ class Myparent extends Model
 {
     use HasFactory;
     protected $table = 'enquetes';
-    protected $fillable =['N_Pension','Nom','Demande','Reponse','Periode','Emp','Rapport'];
+    protected $fillable =['N_Pension','Nom','Demande','Reponse','Periode','Emp','Rapport','user'];
     //protected $guarded =[];
 
    /*  

@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Mail\FirstMail;
 use App\Http\Livewire\EditEnquete;
 use App\Http\Livewire\ListEnquete;
 use Illuminate\Support\Facades\Auth;
@@ -9,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViveController;
 use App\Http\Livewire\UpdateEnqueteComponent;
 use App\Http\Controllers\Admin\UploadsController;
-use App\Mail\FirstMail;
+use App\Http\Controllers\Admin\UploadsWilayaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,6 +58,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::post('/Premier_destroy/{id}', 'Admin\DemandesController@Premier_destroy')->name('Premier_destroy');
 
     Route::view('add-wilaya','livewire.wilaya');
+    Route::get('Attachement-wilaya/{id}', 'Admin\UploadsWilayaController@index');
+    Route::get('download/{Nom}/{file_name}', 'Admin\UploadsWilayaController@download');
+    Route::post('delete', 'Admin\UploadsWilayaController@delete')->name('delete');
+    Route::get('view/{Nom}/{file_name}', 'Admin\UploadsWilayaController@view');
+    //Route::get('open/{N_Pension}', 'Admin\UploadsController@open');
 
     Route::get('/loogin', function () {
         return view('loogin');
