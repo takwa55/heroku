@@ -677,8 +677,8 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 1.5rem);
-  padding-left: var(--bs-gutter-x, 1.5rem);
+  padding-right: var(--bs-gutter-x, 0.2rem);
+  padding-left: var(--bs-gutter-x, 0rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -9278,7 +9278,7 @@ fieldset:disabled .btn {
 }
 
 .ms-4 {
-  margin-left: 1.5rem !important;
+  margin-left: 0.5rem !important;
 }
 
 .ms-5 {

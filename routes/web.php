@@ -64,6 +64,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::get('view/{Nom}/{file_name}', 'Admin\UploadsWilayaController@view');
     //Route::get('open/{N_Pension}', 'Admin\UploadsController@open');
 
+
     Route::get('/loogin', function () {
         return view('loogin');
     });
