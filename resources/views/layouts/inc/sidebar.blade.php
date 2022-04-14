@@ -82,4 +82,15 @@
               <a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'wilaya_report' }}"><i class="icon icon-diamond"></i>Statistique-Wilaya</a></li>
           </ul>
         </li>
+
+        <li class="nav-item"id="navbarNavDarDropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
+            <i class="fa fa-server" style="color: rgb(255, 242, 0)"></i>Les Utilisateur
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'users' }}"><i class="icon icon-diamond"></i>List des Utilisateur</a></li>
+              <a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'roles' }}"><i class="icon icon-diamond"></i>les conditions</a></li>
+          </ul>
+        </li>
     </div>

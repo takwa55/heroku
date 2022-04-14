@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use DB;
-use Hash;
 use App\Models\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+/* use Spatie\Permission\Contracts\Role; */
 use Spatie\Permission\Models\Role;
+
 
 class UserController extends Controller
 {

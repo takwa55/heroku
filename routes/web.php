@@ -8,10 +8,14 @@ use App\Http\Livewire\ListEnquete;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ViveController;
 use App\Http\Livewire\UpdateEnqueteComponent;
+use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\Admin\UploadsController;
 use App\Http\Controllers\Admin\UploadsWilayaController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -75,10 +79,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::post('/Search_invoices', 'Admin\WilayaReportController@Search_invoices');
 
     Route::group(['middleware' => ['auth']], function() {
-        Route::resource('users', UserController::class);
-        Route::resource('roles', RoleController::class);
-        Route::resource('permissions', PermissionController::class);
-        Route::resource('posts', PostController::class);
+        Route::resource('users', 'UserController');
+        Route::resource('roles', 'RoleController');
+        Route::resource('permissions', 'PermissionController');
     });
     
 
