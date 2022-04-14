@@ -1,6 +1,7 @@
 <?php
 
 
+use Carbon\Carbon;
 use App\Mail\FirstMail;
 use App\Http\Livewire\EditEnquete;
 use App\Http\Livewire\ListEnquete;
@@ -40,7 +41,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::get('download/{Nom}/{file_name}', 'Admin\UploadsController@download');
     Route::post('delete', 'Admin\UploadsController@delete')->name('delete');
     Route::get('view/{Nom}/{file_name}', 'Admin\UploadsController@view');
-    Route::get('open/{N_Pension}', 'Admin\UploadsController@open');
+   
 
     
     Route::get('instances-revision','Admin\InstancesController@index');
@@ -62,7 +63,27 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::get('download/{Nom}/{file_name}', 'Admin\UploadsWilayaController@download');
     Route::post('delete', 'Admin\UploadsWilayaController@delete')->name('delete');
     Route::get('view/{Nom}/{file_name}', 'Admin\UploadsWilayaController@view');
-    //Route::get('open/{N_Pension}', 'Admin\UploadsController@open');
+
+
+
+    Route::get('enquete_report', 'Admin\ReportController@index');
+    Route::post('/Search_invoices', 'Admin\ReportController@Search_invoices');
+
+
+
+    Route::get('wilaya_report', 'Admin\WilayaReportController@index');
+    Route::post('/Search_invoices', 'Admin\WilayaReportController@Search_invoices');
+
+    Route::group(['middleware' => ['auth']], function() {
+        Route::resource('users', UserController::class);
+        Route::resource('roles', RoleController::class);
+        Route::resource('permissions', PermissionController::class);
+        Route::resource('posts', PostController::class);
+    });
+    
+
+    
+
 
 
     Route::get('/loogin', function () {

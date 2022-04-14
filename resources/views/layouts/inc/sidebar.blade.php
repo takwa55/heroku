@@ -62,7 +62,7 @@
           </ul>
         </li>
 
-           <li class="nav-item"id="navbarNavDarDropdown">
+        <li class="nav-item"id="navbarNavDarDropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
             <i class="fa fa-server" style="color: rgb(255, 242, 0)"></i>Service_Liquidation
           </a>
@@ -71,45 +71,15 @@
             <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'demande-enquete' }}"><i class="icon icon-book-open"></i>Instance 1-ier_paiement</a></li>
           </ul>
         </li>
-     {{--    <li class="nav-item">
-          <a class="nav-link " href="{{ url('add-enquete') }}">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Liste des enquetes/locale</span>
-          </a>
-        </li>  --}}
 
-      {{--   <li class="nav-item">
-          <a class="nav-link " href="{{ 'Ajouter-revision' }}">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Demande Revision /338</span>
+        <li class="nav-item"id="navbarNavDarDropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
+            <i class="fa fa-server" style="color: rgb(255, 242, 0)"></i>Statistique
           </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'enquete_report' }}"><i class="icon icon-diamond"></i>Statistique-Constantine</a></li>
+              <a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'wilaya_report' }}"><i class="icon icon-diamond"></i>Statistique-Wilaya</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="{{ 'instances-revision' }}">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Instance Revision</span>
-          </a>
-        </li> --}}
-       {{--  <li class="nav-item">
-          <a class="nav-link " href="{{ 'ajouter-enquete' }}">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Demande 1-ier_paiement</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="{{ 'demande-enquete' }}">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-app text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Instance 1-ier_paiement</span>
-          </a>
-        </li> --}}
     </div>

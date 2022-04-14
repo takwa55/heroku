@@ -3,6 +3,7 @@
        <script src="{{asset('admin/js/core/bootstrap.min.js') }}"></script>
        <script src="{{asset('admin/js/plugins/perfect-scrollbar.min.js') }}"></script>
        <script src="{{asset('admin/js/plugins/smooth-scrollbar.min.js') }}"></script>
+       <script src="{{asset('admin/js/plugins/bootstrap.bundle.min.js') }}"></script>
        <script src="{{asset('admin/js/plugins/chartjs.min.js') }}"></script>
        <script src="{{asset('admin/js/plugins/moment.min.js') }}"></script>
      

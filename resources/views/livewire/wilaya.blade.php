@@ -65,7 +65,7 @@
 
 @section('content')
     <div class="card">
-        <div class="card-body" id="back"  style= "border-radius:7px.7px;width:100%">
+        <div class="card-body" id="back"  style= "border-radius:7px;width:100%">
             <h3 style="color: white; text-align:center; font:bolder" >Caisse Nationale des Retraites</h3>
             <img src="{{ asset('admin/img/338.jpg') }}" alt="main_logo" style="padding:0; margin-left:1096.9px;margin-top:0; width: 156px;margin-top: -3.44em;position:absolute">
             <livewire:add-wilaya/> 
