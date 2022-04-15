@@ -13,14 +13,6 @@ class UploadsWilayaController extends Controller
     public function index($id)
     {
         $wilayas = Wilaya::where('id',$id)->get();
-        /* $enquetes = DB::table('enquetes')->get()->sortBy('N_Pension')->toArray(); */
-
-       /*  $enquetes = DB::table('enquetes')
-        ->select('N_Pension','Nom', DB::raw('COUNT(*) as `count`'))
-        ->groupBy('N_Pension','Nom')
-        ->having('count', '>', 1)
-        ->get(); */
-  
         $attachements = AttachementWilaya::where('wilaya_id',$id)->get();
       return view('page.detail-wilaya',compact('wilayas','attachements'));
     }
@@ -39,11 +31,6 @@ class UploadsWilayaController extends Controller
 
    public function delete(Request $request)
     {
-
-   /*    if (Storage::exists('app/enquete_attachments/')) {
-        Storage::delete('app/enquete_attachments/');
-      } */
-      Storage::disk('wilaya_attachments')->delete('app/wilaya_attachments/'.$request->Nom,'/'.$request->file_name);
 
 
       AttachementWilaya::where('id',$request->id)->where('file_name', $request->file_name)->delete();

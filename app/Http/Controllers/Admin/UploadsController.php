@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Myparent;
 use Illuminate\Http\Request;
 use App\Models\Models\Attachement;
-use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 
@@ -39,21 +38,15 @@ class UploadsController extends Controller
     }
 
 
-   public function delete(Request $request)
+    public function delete(Request $request)
     {
 
-   /*    if (Storage::exists('app/enquete_attachments/')) {
-        Storage::delete('app/enquete_attachments/');
-      } */
       Storage::disk('enquete_attachments')->delete('app/enquete_attachments/'.$request->Nom,'/'.$request->file_name);
-
 
       Attachement::where('id',$request->id)->where('file_name', $request->file_name)->delete();
       
       return redirect()->back();
     }
-
-
 
 }
 

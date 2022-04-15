@@ -22,6 +22,7 @@ class AddEnquete extends Component
     $Reponse,
     $Periode,
     $Emp,
+    $Wilaya,
     $Rapport;
     public
     $photos,
@@ -51,6 +52,7 @@ class AddEnquete extends Component
             $My_Parent->Periode = $this->Periode;
             $My_Parent->Emp = $this->Emp;
             $My_Parent->Rapport = $this->Rapport;
+            $My_Parent->Wilaya = $this->Wilaya;
             $My_Parent ->user = (Auth::user()->name); 
             $My_Parent->save();
 
@@ -77,6 +79,7 @@ class AddEnquete extends Component
             $this->Periode = '';
             $this->Emp = '';
             $this->Rapport = '';
+            $this->Wilaya = '';
     }
 
     public function edit($id)
@@ -93,6 +96,7 @@ class AddEnquete extends Component
         $this->Periode = $My_Parent->Periode;
         $this->Emp = $My_Parent->Emp;
         $this->Rapport = $My_Parent->Rapport;
+        $this->Wilaya = $My_Parent->Wilaya;
         $this->user = $My_Parent->user;
     }
  public function submitForm_edit()
@@ -107,6 +111,7 @@ class AddEnquete extends Component
             'Periode' => $this->Periode,
             'Emp' => $this->Emp,
             'Rapport' => $this->Rapport,
+            'Rapport' => $this->Wilaya,
             'user' => $this->user,
 
         ]);

@@ -14,6 +14,9 @@
                         <a class="btn btn-primary" href="{{ route('roles.create') }}">New Role</a>
                     </span>
                 @endcan
+                <i>
+                    <a class="btn btn-info" href="{{ url('home') }}" style="color: white;">Général</a>
+                </i>
             </div>
             <div class="card-body">
                 <table class="table table-hover">

@@ -17,7 +17,7 @@ class CreateAttachementWilayasTable extends Migration
             $table->id();
             $table->string('file_name',999);
             $table->unsignedBigInteger('wilaya_id')->nullable;
-            $table->foreign('wilaya_id')->references('id')->on('wilayas')->onDelete('cascade');;
+            $table->foreign('wilaya_id')->references('id')->on('wilayas')->onDelete('cascade');
             $table->timestamps();
         });
     }

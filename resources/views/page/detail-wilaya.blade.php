@@ -80,7 +80,7 @@
                 <th style="width: 70px">id</th>
                 <th style="width: 70px">N_Pension</th>
                 <th style="width: 310px">Nom</th>
-                <th style="width: 70px">Rapport</th>
+                <th style="width: 70px">Wilaya</th>
               </tr>
             </thead>
             <tbody>
@@ -92,7 +92,7 @@
                 <td>{{ $i}}</td>
                 <td>{{ $style->N_Pension }}</td>
                 <td>{{ $style->Nom }}</td>
-                <td>@mdo</td>
+                <td>{{ $style->Wilaya }}</td>
               </tr>
               @endforeach
             </tbody>
@@ -113,22 +113,21 @@
             </thead>
             <tbody>
                 <?php $i=0; ?>
-                @foreach ($attachements as $enquete)                                      
+                @foreach ($attachements as $wilaya)                                      
               <tr style="text-align: center">
                 <?php $i++; ?> 
           
                 <td>{{ $i}}</td>
                 <td>{{ $style->N_Pension }}</td>
                 <td>{{ $style->Nom }}</td>
-                <td>{{ $enquete->file_name }}</td>
+                <td>{{ $wilaya->file_name }}</td>
                 <td>
-                  <a href="{{ url('download') }}/{{ $style->Nom }}/{{ $enquete->file_name }}" class="btn btn-warning" role="button" title="Télécharger"><i class="fa fa-download"></i></a>
-                  {{-- <a href="{{ url('delete') }}/{{ $style->Nom }}/{{ $enquete->file_name }}" class="btn btn-danger" role="button"><i class="fa fa-trash"></i></a> --}}
-                  <a href="{{ url('view') }}/{{ $style->Nom }}/{{ $enquete->file_name }}" class="btn btn-info" role="button" title=""><i class="fa fa-eye"></i></a>
-                  <button type="button" class = "btn btn-danger" data-bs-toggle="modal" title="Suprimer" data-bs-target="#delete_image{{ $enquete->id }}"><i class="fa fa-trash"></i></button>
+                  <a href="{{ url('download') }}/{{ $style->Nom }}/{{ $wilaya->file_name }}" class="btn btn-warning" role="button" title="Télécharger"><i class="fa fa-download"></i></a>
+                  <a href="{{ url('view') }}/{{ $style->Nom }}/{{ $wilaya->file_name }}" class="btn btn-info" role="button" title=""><i class="fa fa-eye"></i></a>
+                  <button type="button" class = "btn btn-danger" data-bs-toggle="modal" title="Suprimer" data-bs-target="#delete_images{{ $wilaya->id }}"><i class="fa fa-trash"></i></button>
                 </td>
               </tr>
-              @include('page.delete')
+              @include('page.delete-wilaya')
               @endforeach
             </tbody>
           </table>

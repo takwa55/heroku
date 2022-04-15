@@ -102,16 +102,22 @@
                         <td class="text-center">{{ $items->Emp }}</td> 
                         <td>{{ $items->user }}</td> 
                         <td class="text-center">
-                            <button type="button"id="instance" class="btn btn-sm btn-info" data-bs-toggle="modal"
-                            data-bs-target="#edit{{ $items->id }}"><i class="fa fa-edit"></i></button>
-                            <button type="button"id="delete" class="btn btn-sm btn-danger"  data-bs-toggle="modal"
-                            data-bs-target="#delete{{ $items->id }}"><i class="fa fa-trash"></i></button>
+
+                            @can('Modifier_instance_Premier_Paiement')
+                                <button type="button"id="instance" class="btn btn-sm btn-info" data-bs-toggle="modal"
+                                data-bs-target="#edite{{ $items->id }}"><i class="fa fa-edit"></i></button>
+                            @endcan
+
+                            @can('Suprimer_instance_Premier_Paiement')
+                                <button type="button"id="delete" class="btn btn-sm btn-danger"  data-bs-toggle="modal"
+                                data-bs-target="#deletet{{ $items->id }}"><i class="fa fa-trash"></i></button>
+                            @endcan
                         </td>
                     </tr>
 
 
                       <!-- Modal Update-->
-                      <div class="modal fade" id="edit{{ $items->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                      <div class="modal fade" id="edite{{ $items->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
@@ -159,7 +165,7 @@
                         </div>                
                     </div>    
                     <!-- Modal delete-->
-                    <div class="modal fade" id="delete{{ $items->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="deletet{{ $items->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">

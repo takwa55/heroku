@@ -43,8 +43,6 @@ return [
         'enquete_attachments' => [
             'driver' => 'local',
             'root' => storage_path('app/enquete_attachments'),
-            'url' => env('APP_URL').'/storage',
-            'visibility' => 'public',
         ],
 
         'public' => [

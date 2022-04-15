@@ -12,6 +12,9 @@
                 <span class="float-right">
                     <a class="btn btn-primary" href="{{ route('users.create') }}">New User</a>
                 </span>
+              
+                    <a class="btn btn-info" href="{{ url('home') }}" style="color: white;float:right;">Général</a>
+              
             </div>
             <div class="card-body">
                 <table class="table">

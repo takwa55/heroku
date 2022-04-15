@@ -1,5 +1,8 @@
-<button wire:click="showformadd" class="btn btn-info btn-sm" id="btnajou" type="button">
+
+@can('Ajouter_locale')
+    <button wire:click="showformadd" class="btn btn-info btn-sm" id="btnajou" type="button">
     <img src="{{ asset('admin/img/plus-sign.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"> Ajouter Assuré</button>
+@endcan
 <br> <br>
     <div class="row">
         <div class="col-12">
@@ -36,10 +39,16 @@
                                     <td>{{ $enquete->Rapport }}</td>
                                     <td>{{ $enquete->user }}</td>
                                     <td>
-                                        <button type="button" wire:click="edit({{$enquete->id }})" class="btn btn-info btn-sm" style="background-color: blue" title="Modifier"><i class="fa fa-edit"></i></button>
-                                        <button type="button" wire:click="delete({{$enquete->id }})" class="btn btn-danger btn-sm" style="background-color: red; margin-left:4.5px;margin-right:0.1px" title="Delete"><i class="fa fa-trash"></i></button>
+                                        @can('Modifier_locale')
+                                            <button type="button" wire:click="edit({{$enquete->id }})" class="btn btn-info btn-sm" style="background-color: blue" title="Modifier"><i class="fa fa-edit"></i></button>
+                                        @endcan
                                         
-                                        <a href="{{ url('Attachement')}}/{{ ($enquete->id) }}" class="btn btn-warning btn-sm" title="Détail"><i class="fa fa-eye"></i></a>
+                                        @can('Suprimer_locale')
+                                            <button type="button" wire:click="delete({{$enquete->id }})" class="btn btn-danger btn-sm" style="background-color: red; margin-left:4.5px;margin-right:0.1px" title="Suprimer"><i class="fa fa-trash"></i></button>
+                                        @endcan
+                                        
+                                        <a href="{{ url('Attachement_locale')}}/{{ ($enquete->id) }}" class="btn btn-warning btn-sm" title="Détail"><i class="fa fa-eye"></i></a>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

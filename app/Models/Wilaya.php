@@ -9,5 +9,5 @@ class Wilaya extends Model
 {
     use HasFactory;
     protected $table = 'wilayas';
-    protected $fillable =['N_Pension','Nom','Demande','Reponse','Periode','Emp','Rapport','user'];
+    protected $fillable =['N_Pension','Nom','Demande','Reponse','Periode','Emp','Rapport','Wilaya','user'];
 }

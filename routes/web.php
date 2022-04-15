@@ -41,10 +41,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::get('/dashboard','Admin\FrontendController@index');
     Route::view('add-enquete','livewire.show');
     
-    Route::get('Attachement/{id}', 'Admin\UploadsController@index');
-    Route::get('download/{Nom}/{file_name}', 'Admin\UploadsController@download');
-    Route::post('delete', 'Admin\UploadsController@delete')->name('delete');
-    Route::get('view/{Nom}/{file_name}', 'Admin\UploadsController@view');
+    Route::get('Attachement_locale/{id}', 'Admin\UploadsController@index');
+    Route::get('download_locale/{Nom}/{file_name}', 'Admin\UploadsController@download');
+    Route::post('delete_locale', 'Admin\UploadsController@delete')->name('delete_locale');
+    Route::get('view_locale/{Nom}/{file_name}', 'Admin\UploadsController@view');
    
 
     
@@ -63,7 +63,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::post('/Premier_destroy/{id}', 'Admin\DemandesController@Premier_destroy')->name('Premier_destroy');
 
     Route::view('add-wilaya','livewire.wilaya');
-    Route::get('Attachement-wilaya/{id}', 'Admin\UploadsWilayaController@index');
+    
+    Route::get('Attachement_wilaya/{id}', 'Admin\UploadsWilayaController@index');
     Route::get('download/{Nom}/{file_name}', 'Admin\UploadsWilayaController@download');
     Route::post('delete', 'Admin\UploadsWilayaController@delete')->name('delete');
     Route::get('view/{Nom}/{file_name}', 'Admin\UploadsWilayaController@view');

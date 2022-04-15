@@ -21,6 +21,7 @@ class AddWilaya extends Component
     $Periode,
     $Emp,
     $Rapport,
+    $Wilaya,
     $user;
     public
     $photos,
@@ -52,6 +53,7 @@ class AddWilaya extends Component
         $My_Parent->Periode = $this->Periode;
         $My_Parent->Emp = $this->Emp;
         $My_Parent->Rapport = $this->Rapport;
+        $My_Parent->Wilaya = $this->Wilaya;
         $My_Parent ->user = (Auth::user()->name); 
         $My_Parent->save();
 
@@ -78,6 +80,7 @@ class AddWilaya extends Component
             $this->Periode = '';
             $this->Emp = '';
             $this->Rapport = '';
+            $this->Wilaya = '';
     }
 
     public function edit($id)
@@ -94,6 +97,7 @@ class AddWilaya extends Component
         $this->Periode = $My_wilaya->Periode;
         $this->Emp = $My_wilaya->Emp;
         $this->Rapport = $My_wilaya->Rapport;
+        $this->Wilaya = $My_wilaya->Wilaya;
         $this->user = $My_wilaya->user;
 
     }
@@ -110,6 +114,7 @@ class AddWilaya extends Component
                 'Periode' => $this->Periode,
                 'Emp' => $this->Emp,
                 'Rapport' => $this->Rapport,
+                'Rapport' => $this->Wilaya,
                 'user' => $this->user,
 
             ]);

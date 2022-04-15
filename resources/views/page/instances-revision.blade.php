@@ -103,10 +103,17 @@
                         <td class="text-center">{{ $items->Emp }}</td> 
                         <td>{{ $items->user }}</td> 
                         <td class="text-center">
-                            <button type="button" id="instance" class="btn btn-sm btn-info" data-bs-toggle="modal"
-                            data-bs-target="#edit{{ $items->id }}"><i class="fa fa-edit"></i></button>
-                            <button type="button" id="delete" class="btn btn-sm btn-danger"  data-bs-toggle="modal"
-                            data-bs-target="#delete{{ $items->id }}"><i class="fa fa-trash"></i></button>
+
+                            @can('Modifier_instance_Revision')
+                                <button type="button" id="instance" class="btn btn-sm btn-info" data-bs-toggle="modal"
+                                data-bs-target="#edit{{ $items->id }}"><i class="fa fa-edit"></i></button>
+                            @endcan
+
+                            @can('Suprimer_instance_Revision')  
+                                <button type="button" id="delete" class="btn btn-sm btn-danger"  data-bs-toggle="modal"
+                                data-bs-target="#delete{{ $items->id }}"><i class="fa fa-trash"></i></button>
+                            @endcan
+                          
                         </td>
                     </tr>
 
