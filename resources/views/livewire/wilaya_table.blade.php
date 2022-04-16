@@ -1,6 +1,6 @@
 @can('Ajouter_wilaya')
-    <button wire:click="showformadd" class="btn btn-info btn-sm" id="btnajou" type="button">
-    <img src="{{ asset('admin/img/plus-sign.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"> Ajouter Assuré</button>
+    <button wire:click="showformadd" class="btn btn-info btn-sm" id="btnajou1" type="button">
+    <img src="{{ asset('admin/img/plus-sign.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"><span> Ajouter Assuré</span></button>
 @endcan
 <br> <br>
     <div class="row">

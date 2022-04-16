@@ -42,14 +42,75 @@
     margin:-0.4em;
     text-align-last: center;
     }
-    #btnajou{
-        margin-left: 5px;
-        width: 190px;
-        font-size: 15px;
-        color: beige;
-        font-weight: 700;
-        background-color: rgb(28, 8, 255)
+    #btnajou1{
+        background: linear-gradient(0deg, rgb(0, 21, 255) 0%, rgb(2, 197, 251) 100%);
+        line-height: 42px;
+        padding: 0;
+        border: 2px solid white;
+        font-size: 21px;
+        width: 250px;
+        margin-left: 9px;
     }
+    #btnajou1:before,
+    #btnajou1:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgb(2, 251, 77);
+        box-shadow:
+        -7px -7px 20px 0px rgba(255,255,255,.9),
+        -4px -4px 5px 0px rgba(255,255,255,.9),
+        7px 7px 20px 0px rgba(0,0,0,.2),
+        4px 4px 5px 0px rgba(0,0,0,.3);
+        transition: all 0.3s ease;
+    }
+    #btnajou1:before{
+        height: 0%;
+        width: 2px;
+    }
+    #btnajou1:after {
+        width: 0%;
+        height: 2px;
+    }
+    #btnajou1:hover{
+        color: rgb(255, 255, 7);
+        background: transparent;
+    }
+    #btnajou1:hover:before {
+        height: 100%;
+    }
+    #btnajou1:hover:after {
+         width: 100%;
+    }
+    #btnajou1 span:before,
+    #btnajou1 span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgb(234, 251, 2);
+        box-shadow:
+        -7px -7px 20px 0px rgba(255,255,255,.9),
+        -4px -4px 5px 0px rgba(255,255,255,.9),
+        7px 7px 20px 0px rgba(0,0,0,.2),
+        4px 4px 5px 0px rgba(0,0,0,.3);
+        transition: all 0.3s ease;
+    }
+    #btnajou1 span:before {
+        width: 2px;
+        height: 0%;
+    }
+    #btnajou1 span:after {
+        height: 2px;
+        width: 0%;
+    }
+    #btnajou1 span:hover:before {
+        height: 100%;
+    }
+    #btnajou1 span:hover:after {
+        width: 100%;
+}
     .row input,placeholder{
         font-weight: 700;
     }
@@ -66,7 +127,7 @@
 @section('content')
     <div class="card">
         <div class="card-body" id="back"  style= "border-radius:7px;width:100%">
-            <h3 style="color: white; text-align:center; font:bolder" >Caisse Nationale des Retraites</h3>
+            <h3 style="color: white; text-align:center; font:bolder" >Les enquetes <span style="color: rgb(57, 255, 3);text-decoration:underline">Wilayas</span></h3>
             <img src="{{ asset('admin/img/338.jpg') }}" alt="main_logo" style="padding:0; margin-left:1096.9px;margin-top:0; width: 156px;margin-top: -3.44em;position:absolute">
             <livewire:add-wilaya/> 
         </div>

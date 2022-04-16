@@ -76,7 +76,7 @@
     <div class="row-12">
         <div class="card">
             <div class="card-header" style="background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);">
-                <h4 style="text-align: center; color:rgb(255, 255, 255); font-size:23px">Les Enquetes En Instances/Service Revision</h4> 
+                <h4 style="text-align: center; color:rgb(255, 255, 255); font-size:23px">Les Enquetes En Instances <span style="color: rgb(245, 255, 60);text-decoration:underline"> Service Revision</span></h4> 
             </div>
             <div class="card-body">
             <table id="example" class="table table-bordered border-primar">

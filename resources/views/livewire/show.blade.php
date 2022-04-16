@@ -43,27 +43,59 @@
     text-align-last: center
     }
     #btnajou{
-        margin-left: 5px;
-        width: 190px;
-        font-size: 15px;
-        color: beige;
-        font-weight: 700;
-        background-color: rgb(28, 8, 255);
-        border-radius: 25px;
-        
-        border: 2px solid rgb(255, 255, 255);
-        transition: all 0.2s ease;
-        padding: 5px;
-        
+        background: blue;
+        border: none;
+        z-index: 1;
+        border: 2px solid white;
+        margin-left: 9px;
+        font-size: 19px;
     }
-    #btnajou:hover{
-        background:rgb(255, 73, 173);
-        cursor: pointer;
-        color: rgb(255, 255, 255);
+    #btnajou:after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 5px;
+        background-color: #ffff00;
+        background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5);
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        transition: all 0.3s ease;
     }
-   
-
-    
+    #btnajou:hover {
+        color: #000;
+    }
+    #btnajou:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 5px;
+        background-color: #ffff00;
+        background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5);
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        transition: all 0.3s ease;
+    }
+    #btnajou:hover {
+         color: #000;
+    }
+    #btnajou:hover:after {
+        top: auto;
+        bottom: 0;
+        height: 100%;
+    }
+    #btnajou:active {
+        top: 19px;
+}
 </style>
 
 @endsection
@@ -71,7 +103,7 @@
 @section('content')
     <div class="card">
         <div class="card-body"  style="background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); border-radius:7px;">
-            <h3 style="color: white; text-align:center; font:bolder" >Caisse Nationale des Retraites</h3>
+            <h3 style="color: white; text-align:center; font:bolder;" >Les enquetes_wilaya de <span style="color: rgb(255, 206, 60);text-decoration:underline">Constantine</span></h3>
             <img src="{{ asset('admin/img/338.jpg') }}" alt="main_logo" style="padding:0; margin-left:1096.9px;margin-top:0; width: 156px;margin-top: -3.44em;position:absolute">
             <livewire:add-enquete/> 
         </div>

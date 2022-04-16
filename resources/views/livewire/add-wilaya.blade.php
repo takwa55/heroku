@@ -9,6 +9,7 @@
     {{ session('warning-message') }}
 </div>
 @endif
+
 <div>
     @if($show_table)
     @include('livewire.wilaya_table')
@@ -124,11 +125,11 @@
                     <br>
                     @if ($udateMode)
                     <div class="col-md-12">
-                        <button class="btn btn-success" wire:click="submitForm_edit" type="button">
+                        <button class="btn btn-success" wire:click="submitForm_edit" type="button" id="btnajou1">
                             <img src="{{ asset('admin/img/edit.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"> Modifier</button>
                     </div>
                     @else
-                    <button class="btn btn-success" wire:click="submitForm" type="button" style="background-color: blue;margin-left:19px;">
+                    <button class="btn btn-success" wire:click="submitForm" type="button" id="btnajou1">
                         <img src="{{ asset('admin/img/plus-sign.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"> Ajouter</button>
                     @endif
                 </div>
