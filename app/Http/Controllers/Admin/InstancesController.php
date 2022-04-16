@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Detail;
 use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class InstancesController extends Controller
 {
@@ -49,7 +50,7 @@ class InstancesController extends Controller
             ]);
         }
            
-        return redirect()->back()->with('success'); 
+        return redirect()->back()->with('success','Félicitation ! La demande a été enregistrée'); 
     }  
 
     public function Enquete_update(Request $request)
@@ -63,13 +64,13 @@ class InstancesController extends Controller
             $revisions->Periode = $request->Periode,
             $revisions->Emp = $request->Emp,
         ]);
-        return redirect()->back()->with('success','felicitation ! La modification est réussite'); 
+        return redirect()->back()->with('success','Félicitation ! La modification a été enregistrée avec succés'); 
   }
 
   public function Revisions_destroy(Request $request)
   {
       $revisions = Instance::findOrFail($request->id)->delete();
-      return redirect()->back()->with('warning','felicitation !', 'La suppression est réussite');   
+      return redirect()->back()->with('warning','Désolé ! La demande a été annulée');   
   }
    
 }

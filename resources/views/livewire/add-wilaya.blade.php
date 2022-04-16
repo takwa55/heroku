@@ -84,17 +84,33 @@
                                 <option>Constantine</option>
                                 <option>Médéa</option>
                                 <option>Mostaganem</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
+                                <option>M'Sila</option>
+                                <option>Mascara</option>
+                                <option>Ouargla </option>
+                                <option>Oran</option>
+                                <option>El Bayadh</option>
+                                <option>Illizi</option>
+                                <option>Bordj Bou Arreridj</option>
+                                <option>Boumerdès</option>
+                                <option>Tindouf</option>
+                                <option>Tissemsilt</option>
+                                <option>Khenchela</option>
+                                <option>Souk Ahras</option>
+                                <option>Tipaza</option>
+                                <option>Mila</option>
+                                <option>Aïn Defla</option>
+                                <option>Naâma</option>
+                                <option>Aïn Témouchent</option>
+                                <option>Relizane </option>
+                                <option>Timimoun </option>
+                                <option>Bordj Badji Mokhtar </option>
+                                <option>Ouled Djellal</option>
+                                <option>Ain Salah</option>
+                                <option>Ain Guezzam</option>
+                                <option>Touggourt</option>
+                                <option>Djanet</option>
+                                <option>El M'Ghair</option>
+                                <option>'El Meniaa </option>
                             </select>                                                  
                         </div>
                     </div>
@@ -112,8 +128,7 @@
                             <img src="{{ asset('admin/img/edit.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"> Modifier</button>
                     </div>
                     @else
-                    <button class="btn btn-success" wire:click="submitForm" type="button" style="background-color: blue;margin-left:19px;
-                    ">
+                    <button class="btn btn-success" wire:click="submitForm" type="button" style="background-color: blue;margin-left:19px;">
                         <img src="{{ asset('admin/img/plus-sign.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"> Ajouter</button>
                     @endif
                 </div>

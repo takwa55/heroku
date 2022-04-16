@@ -60,7 +60,7 @@
         <div class="col-xl-12">
             <div class="card mg-b-20">
                 <div class="card-header pb-0">
-                    <form action="/Search_invoices" method="POST" role="search" autocomplete="off">
+                    <form action="/Search_invoice" method="POST" role="search" autocomplete="off">
                         {{ csrf_field() }}
                                              
                         <div class="row"">

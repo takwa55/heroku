@@ -84,17 +84,33 @@
                                 <option>Constantine</option>
                                 <option>Médéa</option>
                                 <option>Mostaganem</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
-                                <option>Laghouat</option>
+                                <option>M'Sila</option>
+                                <option>Mascara</option>
+                                <option>Ouargla </option>
+                                <option>Oran</option>
+                                <option>El Bayadh</option>
+                                <option>Illizi</option>
+                                <option>Bordj Bou Arreridj</option>
+                                <option>Boumerdès</option>
+                                <option>Tindouf</option>
+                                <option>Tissemsilt</option>
+                                <option>Khenchela</option>
+                                <option>Souk Ahras</option>
+                                <option>Tipaza</option>
+                                <option>Mila</option>
+                                <option>Aïn Defla</option>
+                                <option>Naâma</option>
+                                <option>Aïn Témouchent</option>
+                                <option>Relizane </option>
+                                <option>Timimoun </option>
+                                <option>Bordj Badji Mokhtar </option>
+                                <option>Ouled Djellal</option>
+                                <option>Ain Salah</option>
+                                <option>Ain Guezzam</option>
+                                <option>Touggourt</option>
+                                <option>Djanet</option>
+                                <option>El M'Ghair</option>
+                                <option>'El Meniaa </option>
                             </select>                                                  
                         </div>
                     </div>

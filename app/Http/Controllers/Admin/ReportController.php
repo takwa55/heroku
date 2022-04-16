@@ -15,7 +15,7 @@ class ReportController extends Controller
     }
 
     
-    public function Search_invoices(Request $request){
+    public function Search_invoice(Request $request){
         $rdio = $request->rdio;
     
     

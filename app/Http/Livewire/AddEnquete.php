@@ -67,7 +67,7 @@ class AddEnquete extends Component
                 }
             }
             $this->clearForm();
-            return redirect()->to('add-enquete')->with('success','felicitation ! ');
+            return redirect()->to('add-enquete')->with('success','Félicitation ! Données enregistrées avec succés');
         }
 
     public function clearForm()
@@ -116,13 +116,13 @@ class AddEnquete extends Component
 
         ]);
     }
-    return redirect()->to('/add-enquete')->with('success','felicitation ! ');
+    return redirect()->to('/add-enquete')->with('success','Félicitation ! La modification a été enregistrée avec succés');
  }
 
  public function delete($id)
  {
     $enquetes = Myparent::findOrFail($id)->delete();
-    return redirect()->to('/add-enquete')->with('warning','felicitation ! ');
+    return redirect()->to('/add-enquete')->with('warning','Félicitation ! La suppression été effectuée avec succés');
  }
    
 }

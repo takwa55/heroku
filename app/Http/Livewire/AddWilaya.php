@@ -68,7 +68,7 @@ class AddWilaya extends Component
             }
         }
         $this->clearForm();
-        return redirect()->to('add-wilaya')->with('success','felicitation ! ');
+        return redirect()->to('add-wilaya')->with('success','Félicitation ! Données enregistrées avec succés');
     }
 
     public function clearForm()
@@ -119,13 +119,13 @@ class AddWilaya extends Component
 
             ]);
         }
-     return redirect()->to('/add-wilaya')->with('success','felicitation ! ');
+     return redirect()->to('/add-wilaya')->with('success','Félicitation ! La modification a été enregistrée avec succés');
     }
 
     public function delete($id)
     {
         $wialayas = Wilaya::findOrFail($id)->delete();
-        return redirect()->to('/add-wilaya')->with('warning','felicitation ! ');
+        return redirect()->to('/add-wilaya')->with('warning','Félicitation ! La suppression été effectuée avec succés');
     }
    
   

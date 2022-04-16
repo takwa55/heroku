@@ -72,7 +72,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
     Route::get('enquete_report', 'Admin\ReportController@index');
-    Route::post('/Search_invoices', 'Admin\ReportController@Search_invoices');
+    Route::post('/Search_invoice', 'Admin\ReportController@Search_invoice');
 
 
 

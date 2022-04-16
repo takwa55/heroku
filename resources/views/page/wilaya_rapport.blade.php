@@ -86,7 +86,7 @@
                                     <option value="{{ $type ?? 'Utilisateur' }}" selected>
                                         {{ $type ?? '' }}
                                     </option>
-                                    @foreach ($enquetes as $style)
+                                    @foreach ($wilayas as $style)
                                         <option value="{{ $style->user }}">{{ $style->user }}</option>
                                     @endforeach
                                 </select>

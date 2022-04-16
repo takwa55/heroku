@@ -48,8 +48,22 @@
         font-size: 15px;
         color: beige;
         font-weight: 700;
-        background-color: rgb(28, 8, 255)
+        background-color: rgb(28, 8, 255);
+        border-radius: 25px;
+        
+        border: 2px solid rgb(255, 255, 255);
+        transition: all 0.2s ease;
+        padding: 5px;
+        
     }
+    #btnajou:hover{
+        background:rgb(255, 73, 173);
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
+   
+
+    
 </style>
 
 @endsection

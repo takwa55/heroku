@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class DemandesController extends Controller
 {
@@ -48,7 +49,7 @@ class DemandesController extends Controller
                 'wilaya' => $request->wilaya[$key],
             ]);
         }
-       return redirect()->back()->with('success','felicitation');
+       return redirect()->back()->with('success','Félicitation ! La demande a été enregistrée');
     }
 
     public function Enquetes_update(Request $request)
@@ -62,13 +63,13 @@ class DemandesController extends Controller
             $revisions->Periode = $request->Periode,
             $revisions->Emp = $request->Emp,
         ]);
-        return redirect()->back()->with('success','felicitation ! La modification est réussite'); 
+        return redirect()->back()->with('success','Félicitation ! La modification a été enregistrée avec succés'); 
   }
 
   public function Premier_destroy(Request $request)
   {
       $revisions = Demandes::findOrFail($request->id)->delete();
-      return redirect()->back()->with('warning','felicitation !', 'La suppression est réussite');   
+      return redirect()->back()->with('warning','Désolé ! La demande a été annulée');   
   }
    
 }

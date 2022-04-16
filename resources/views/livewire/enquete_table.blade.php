@@ -1,6 +1,6 @@
 
 @can('Ajouter_locale')
-    <button wire:click="showformadd" class="btn btn-info btn-sm" id="btnajou" type="button">
+    <button wire:click="showformadd" class="btn btn-info btn-sm" id="btnajou"type="button">
     <img src="{{ asset('admin/img/plus-sign.png') }}" alt="main_logo" style="width: 27px; margin-right:9px;"> Ajouter Assuré</button>
 @endcan
 <br> <br>

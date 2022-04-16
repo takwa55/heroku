@@ -63,7 +63,7 @@
         @can('Service_Revision')
           <li class="nav-item"id="navbarNavDarDropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
-            <i class="fa fa-server" style="color: chartreuse"></i> Service_Revision
+              <img src="{{ asset('admin/img/customer-service-agent.png') }}" alt="main_logo" style="width: 21px; margin-right:8px;"> Service_Revision
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
 
@@ -81,7 +81,7 @@
         @can('Service_Liquidation')
           <li class="nav-item"id="navbarNavDarDropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
-              <i class="fa fa-server" style="color: rgb(255, 242, 0)"></i>Service_Liquidation
+              <img src="{{ asset('admin/img/consult.png') }}" alt="main_logo" style="width: 21px; margin-right:8px;"> Service_Liquidation
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
 
@@ -99,16 +99,16 @@
         @can('Statistique')
           <li class="nav-item"id="navbarNavDarDropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
-              <i class="fa fa-server" style="color: rgb(255, 242, 0)"></i>Statistique
+              <img src="{{ asset('admin/img/analysis.png') }}" alt="main_logo" style="width: 21px; margin-right:8px;"> Statistique 
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
 
             @can('Statistique_Constantine')
-              <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'enquete_report' }}"><i class="icon icon-diamond"></i>Statistique_Constantine</a></li>
+              <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'enquete_report' }}"><img src="{{ asset('admin/img/bar-chart.png') }}" alt="main_logo" style="width: 21px; margin-right:8px;">Statistique_Constantine</a></li>
             @endcan
 
             @can('Statistique_Wilaya')
-              <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'wilaya_report' }}"><i class="icon icon-diamond"></i>Statistique_Wilaya</a></li>
+              <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'wilaya_report' }}"><img src="{{ asset('admin/img/statistics.png') }}" alt="main_logo" style="width: 21px; margin-right:8px;"> Statistique_Wilaya</a></li>
             @endcan
             </ul>
           </li>
@@ -117,17 +117,18 @@
         @can('Les Utilisateurs') 
           <li class="nav-item"id="navbarNavDarDropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 255, 255)">
-              <i class="fa fa-server" style="color: rgb(255, 242, 0)"></i>Les Utilisateurs
+              <img src="{{ asset('admin/img/service.png') }}" alt="main_logo" style="width: 21px; margin-right:8px;"></i> Les Utilisateurs
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
               
               @can('List des Utilisateurs')
-                <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'users' }}"><i class="icon icon-diamond"></i>List des Utilisateurs</a></li>
+                <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'users' }}"><img src="{{ asset('admin/img/quality-control.png') }}" alt="main_logo" style="width: 21px; margin-right:1px;"></i>List des Utilisateurs</a></li>
               @endcan
-
+             
               @can('Pouvoir de controle')
-                <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'roles' }}"><i class="icon icon-diamond"></i>Pouvoir de controle</a></li>
+                <li><a class="dropdown-item" style="color:black; font-size:16px;" href="{{ 'roles' }}"><img src="{{ asset('admin/img/remote-control.png') }}" alt="main_logo" style="width: 21px; margin-right:1px;"></i>Pouvoir de controle</a></li>
               @endcan
+              
             </ul>
           </li>
         @endcan

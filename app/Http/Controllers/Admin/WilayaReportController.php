@@ -10,8 +10,8 @@ class WilayaReportController extends Controller
 {
     public function index()
     {
-        $enquetes = Wilaya::all();
-        return view('page.wilaya_rapport',compact('enquetes'));
+        $wilayas = Wilaya::all();
+        return view('page.wilaya_rapport',compact('wilayas'));
     }
 
     
@@ -26,9 +26,9 @@ class WilayaReportController extends Controller
            
      // في حالة عدم تحديد تاريخ
             if ($request->type && $request->start_at =='' && $request->end_at =='') {
-               $enquetes = Wilaya::select('*')->where('user','=',$request->type)->get();
+               $wilayas = Wilaya::select('*')->where('user','=',$request->type)->get();
                $type = $request->type;
-               return view('page.wilaya_rapport',compact('type','enquetes'))->withDetails($enquetes);
+               return view('page.wilaya_rapport',compact('type','wilayas'))->withDetails($wilayas);
             }
             
             // في حالة تحديد تاريخ استحقاق
@@ -38,8 +38,8 @@ class WilayaReportController extends Controller
               $end_at = date($request->end_at);
               $type = $request->type;
               
-              $enquetes = Wilaya::whereBetween('Reponse',[$start_at,$end_at])->where('user','=',$request->type)->get();
-              return view('page.wilaya_rapport',compact('type','start_at','end_at','enquetes'))->withDetails($enquetes);
+              $wilayas = Wilaya::whereBetween('Reponse',[$start_at,$end_at])->where('user','=',$request->type)->get();
+              return view('page.wilaya_rapport',compact('type','start_at','end_at','wilayas'))->withDetails($wilayas);
               
             }
     
@@ -52,8 +52,8 @@ class WilayaReportController extends Controller
     // في البحث برقم الفاتورة
         else {
             
-            $enquetes = Wilaya::select('*')->where('N_Pension','=',$request->N_Pension)->get();
-            return view('page.wilaya_rapport',compact('enquetes'))->withDetails($enquetes);
+            $wilayas = Wilaya::select('*')->where('N_Pension','=',$request->N_Pension)->get();
+            return view('page.wilaya_rapport',compact('wilayas'))->withDetails($wilayas);
             
         }
     
