@@ -7,7 +7,7 @@
               document.write(new Date().getFullYear())
             </script>,
             made with <i class="fa fa-heart"></i> by
-            <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank" style="color:rgb(50, 155, 32);text-decoration:underline;">Mr: Mohamed Amin</a>
+            <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank" style="color:rgb(255, 255, 255);text-decoration:underline;width:250px;background:blue;padding:5px;font-weight:700;border-radius:9px;top:0;font-size:15px;line-height:5;">Mr: Mohamed Amin</a>
             for a better web.
           </div>
         </div>

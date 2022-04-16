@@ -44,6 +44,11 @@ return [
             'driver' => 'local',
             'root' => storage_path('app/enquete_attachments'),
         ],
+        
+      /*   'public_uploads' => [
+            'driver' => 'local',
+             'root'   => public_path() . '/Attachements',
+            ], */
 
         'public' => [
             'driver' => 'local',
