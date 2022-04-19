@@ -7,7 +7,7 @@
         border-color: red;
     }
     #emptbl th{
-    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    background: linear-gradient(90deg, #ce1e9f 0%, #f1c963 100%);
    }
 </style>
 <script src="{{ asset('js/Frontend/validate.js') }}"></script>
@@ -17,6 +17,12 @@
 
         <span id="message_error"></span>
         <hr><br>
+        <div class="card"style="background: linear-gradient(90deg, #ce1e9f 0%, #f1c963 100%);>
+            <div class="card-body"  style="background-color: #35465c; border-radius:7px;">
+                <h5 style="color: white; text-align:center; font:bolder" >
+                    Demande enquete service révision / <span style="color: rgb(255, 255, 255);font-size:29px;position:absolute;margin-top: -5px; font-weight: 700;margin-left: 5px;text-decoration: underline;">338</span></h5>
+            </div>
+        </div>
         <div class="repeater">
             <div data-repeater-list="List_Classes">
                 <div class="data-repeater-item">
@@ -24,7 +30,7 @@
                         @csrf 
                         
                         <table id="emptbl" class="table table-bordered border-primar">
-                            <thead class="table-dark text-center">
+                            <thead class="table-dark text-center" style="font-weight: 700;font-size:17px;">
                                 <tr>
                                     <th style="width: 190px">N_Pension</th>
                                     <th style="width: 300px">Nom</th>

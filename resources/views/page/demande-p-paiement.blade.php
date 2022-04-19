@@ -27,6 +27,12 @@
     {{ session('warning-message') }}
 </div>
 @endif
+<div class="card"style="background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);>
+    <div class="card-body"  style="background-color: #35465c; border-radius:7px;">
+        <h5 style="color: white; text-align:center; font:bolder" >
+            Demande enquete service liquidation / <span style="color: rgb(255, 255, 255);font-size:29px;position:absolute;margin-top: -5px; font-weight: 700;margin-left: 5px;text-decoration: underline;">338</span></h5>
+    </div>
+</div>
     <div class="repeater">
         <div data-repeater-list="List_Classes">
             <div class="data-repeater-item">

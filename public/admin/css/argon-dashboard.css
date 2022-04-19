@@ -109,7 +109,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0.5rem;
   font-weight: 400;
   line-height: 1.2;
@@ -24245,7 +24245,7 @@ hr.horizontal.gray-light {
 }
 
 .table thead th {
-  padding: 0.75rem 1.5rem;
+  padding: 4px;
   text-transform: capitalize;
   letter-spacing: 0px;
   border-bottom: 1px solid #e9ecef;
