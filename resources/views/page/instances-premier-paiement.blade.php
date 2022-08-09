@@ -24,7 +24,7 @@
         padding: 7px;
         font-size: 14px;
         font: bold;
-        background-color: blue;
+        background-color: rgb(73, 58, 153);
         color: white;
     }
     #example td:hover{

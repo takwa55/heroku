@@ -70,6 +70,11 @@
     </div>
 </div>
 @endsection --}}
+@section('css')
+    <style>
+       
+    </style>
+@endsection
 @include('layouts.inc.header')
 @section('content')
 <div class="container">
